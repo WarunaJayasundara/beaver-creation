@@ -1,0 +1,4 @@
+Put your logo here.
+File name: logo.png (or logo.svg)
+Recommended size: 36×36 px to 80×80 px. PNG or SVG.
+If no file is added, the built-in Beaver logo is used.

@@ -1,0 +1,3 @@
+Put your hero background image here.
+File name: hero-bg.jpg (or hero-bg.png)
+Recommended size: 1600×900 px or larger, landscape.

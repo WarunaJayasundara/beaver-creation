@@ -1,0 +1,3 @@
+Put your About section image here.
+File name: about-team.jpg (or about-team.png)
+Recommended size: 800×600 px or larger, 4:3 ratio.

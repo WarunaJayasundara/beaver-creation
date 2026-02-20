@@ -1,0 +1,3 @@
+Optional: Put service division page backgrounds here.
+File names: creative-media-bg.jpg, digital-platforms-bg.jpg, smart-engineering-bg.jpg, rnd-bg.jpg
+Recommended size: 1600×900 px or larger, landscape.

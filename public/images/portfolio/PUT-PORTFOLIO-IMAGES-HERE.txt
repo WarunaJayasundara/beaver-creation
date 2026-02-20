@@ -1,0 +1,4 @@
+Put your portfolio project images here.
+File names: project-1.jpg, project-2.jpg, project-3.jpg, project-4.jpg, project-5.jpg, project-6.jpg
+Recommended size: 800×600 px or larger each, 4:3 ratio.
+project-1.jpg is the featured large image on the homepage.
