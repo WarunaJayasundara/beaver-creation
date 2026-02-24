@@ -7,12 +7,12 @@ export function ContactSection() {
   return (
     <section id="contact" className="bg-dark py-24 md:py-[120px] px-5 md:px-12 lg:px-[60px]">
       <SectionLabel>Get In Touch</SectionLabel>
-      <h2 className="font-bebas text-[clamp(2.5rem,4.5vw,4rem)] leading-[0.95] tracking-wide text-white mt-1">
+      <h2 className="font-bebas font-bold text-[clamp(2.5rem,4.5vw,4rem)] leading-[0.95] tracking-wide text-white mt-1">
         Ready to Create <span className="text-primary">Magic?</span>
       </h2>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-14 lg:gap-20 mt-14 items-start">
         <Reveal>
-          <h3 className="font-bebas text-2xl md:text-[2.25rem] text-white mb-4 leading-none">
+          <h3 className="font-bebas font-bold text-2xl md:text-[2.25rem] text-white mb-4 leading-none">
             We&apos;d love to hear your ideas and bring them to life.
           </h3>
           <p className="text-white/60 leading-relaxed mb-10 text-[0.95rem]">

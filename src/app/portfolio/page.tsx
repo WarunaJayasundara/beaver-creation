@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useRef } from "react";
 import Link from "next/link";
 import { SectionLabel } from "@/components/SectionLabel";
 import { Reveal } from "@/components/Reveal";
@@ -21,15 +21,21 @@ const projects = [
 
 export default function PortfolioPage() {
   const [activeFilter, setActiveFilter] = useState("All");
+  const portfolioGridRef = useRef<HTMLDivElement>(null);
+
+  const handleFilterClick = (f: string) => {
+    setActiveFilter(f);
+    portfolioGridRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
+  };
 
   return (
     <main className="pt-24">
-      <section className="bg-[#0a0a0a] py-[120px] px-6 md:px-[60px]">
+      <section className="bg-dark py-24 md:py-[120px] px-5 md:px-12 lg:px-[60px]">
         <div className="flex flex-col md:flex-row md:justify-between md:items-end gap-6 mb-12">
           <Reveal>
             <SectionLabel>Our Work</SectionLabel>
-            <h1 className="font-bebas text-[clamp(2.8rem,5vw,4.5rem)] leading-[0.95] tracking-wide text-white">
-              Where Creativity <span className="text-accent">Comes Alive</span>
+            <h1 className="font-bebas font-bold text-[clamp(2.8rem,5vw,4.5rem)] leading-[0.95] tracking-wide text-white">
+              Where Creativity <span className="text-primary">Comes Alive</span>
             </h1>
           </Reveal>
         </div>
@@ -38,24 +44,24 @@ export default function PortfolioPage() {
             <button
               key={f}
               type="button"
-              onClick={() => setActiveFilter(f)}
+              onClick={() => handleFilterClick(f)}
               className={clsx(
                 "py-2 px-5 border rounded-full font-syne text-[0.75rem] font-bold tracking-wide uppercase cursor-pointer transition-all",
                 activeFilter === f
-                  ? "border-accent text-accent bg-accent/5"
-                  : "border-[var(--border)] text-white/50 hover:border-accent hover:text-accent hover:bg-accent/5"
+                  ? "border-primary text-primary bg-primary/5"
+                  : "border-white/[0.08] text-white/50 hover:border-primary hover:text-primary hover:bg-primary/5"
               )}
             >
               {f}
             </button>
           ))}
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-0.5 mt-8">
+        <div ref={portfolioGridRef} id="portfolio-grid" className="grid grid-cols-1 md:grid-cols-3 gap-px bg-white/[0.08] rounded-lg overflow-hidden mt-8">
           {projects.map((item) => (
             <Reveal key={item.id}>
               <Link
                 href={`/portfolio/${item.id}`}
-                className={`relative overflow-hidden group block ${
+                className={`relative overflow-hidden group block bg-dark-soft ${
                   item.featured ? "md:col-span-2 md:min-h-[320px]" : "aspect-[4/3]"
                 }`}
               >
@@ -71,14 +77,14 @@ export default function PortfolioPage() {
                   }
                   className="object-cover grayscale-[30%] brightness-[0.7] group-hover:grayscale-0 group-hover:brightness-[0.5] group-hover:scale-105 transition-all duration-500"
                 />
-                <div className="absolute top-4 left-4 bg-accent text-white py-1 px-3 rounded-full text-[0.65rem] font-syne font-bold tracking-wide uppercase">
+                <div className="absolute top-4 left-4 bg-primary text-white py-1.5 px-3 rounded-md text-[0.65rem] font-syne font-bold tracking-wide uppercase shadow-lg">
                   {item.category}
                 </div>
-                <div className="absolute inset-0 flex flex-col justify-end p-6 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
-                  <span className="font-syne text-[0.65rem] font-bold tracking-[2px] uppercase text-accent mb-1.5">
+                <div className="absolute inset-0 flex flex-col justify-end p-6 bg-gradient-to-t from-black/85 to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+                  <span className="font-syne text-[0.65rem] font-bold tracking-[2px] uppercase text-primary mb-1.5">
                     {item.tag}
                   </span>
-                  <span className="font-syne font-extrabold text-base text-white">
+                  <span className="font-syne font-black text-base text-white">
                     {item.name}
                   </span>
                 </div>

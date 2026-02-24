@@ -39,7 +39,7 @@ export function ProcessSection() {
           <div className="flex justify-center">
             <SectionLabel>How We Work</SectionLabel>
           </div>
-          <h2 className="font-bebas text-[clamp(2.5rem,4.5vw,4rem)] leading-[0.95] tracking-wide text-dark mt-1">
+          <h2 className="font-bebas font-bold text-[clamp(2.5rem,4.5vw,4rem)] leading-[0.95] tracking-wide text-dark mt-1">
             Our <span className="text-primary">Process</span>
           </h2>
         </Reveal>

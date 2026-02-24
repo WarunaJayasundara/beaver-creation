@@ -36,7 +36,7 @@ export function Hero() {
           <span className="w-1.5 h-1.5 bg-primary rounded-full animate-pulse" />
           Creative Tech Studio · Est. 2024
         </div>
-        <h1 className="font-bebas text-[clamp(3.5rem,8.5vw,8rem)] leading-[0.96] tracking-[2px] text-white drop-shadow-xl">
+        <h1 className="font-bebas font-black text-[clamp(3.5rem,8.5vw,8rem)] leading-[0.96] tracking-[2px] text-white drop-shadow-xl">
           Turning
           <br />
           <span className="text-primary">Creativity</span>
@@ -63,7 +63,7 @@ export function Hero() {
         </div>
       </div>
 
-      <div className="absolute bottom-10 left-5 md:left-[60px] flex items-center gap-3 text-white/50 text-[0.7rem] font-syne tracking-[2px] uppercase">
+      <div className="absolute bottom-10 left-5 md:left-12 lg:left-[60px] flex items-center gap-3 text-white/50 text-[0.7rem] font-syne tracking-[2px] uppercase">
         <div className="w-12 h-px bg-white/25 relative overflow-hidden">
           <span
             className="absolute inset-y-0 left-0 w-full bg-primary animate-[scrollSlide_2s_infinite]"
@@ -73,7 +73,7 @@ export function Hero() {
         Scroll Down
       </div>
 
-      <div className="absolute right-5 md:right-[60px] bottom-14 z-[2] hidden md:flex gap-12">
+      <div className="absolute right-5 md:right-12 lg:right-[60px] bottom-14 z-[2] hidden md:flex gap-12">
         <div className="text-center">
           <div className="font-bebas text-[2.6rem] text-primary leading-none">50+</div>
           <div className="text-[0.68rem] text-white/45 font-syne tracking-[1.5px] uppercase mt-1">Projects</div>

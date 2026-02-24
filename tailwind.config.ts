@@ -23,9 +23,10 @@ const config: Config = {
         "accent-hover": "#54BC79",
       },
       fontFamily: {
-        bebas: ["var(--font-bebas)", "sans-serif"],
-        syne: ["var(--font-syne)", "sans-serif"],
-        sans: ["var(--font-dm-sans)", "sans-serif"],
+        sans: ["var(--font-roboto)", "Roboto", "sans-serif"],
+        roboto: ["var(--font-roboto)", "Roboto", "sans-serif"],
+        bebas: ["var(--font-roboto)", "Roboto", "sans-serif"],
+        syne: ["var(--font-roboto)", "Roboto", "sans-serif"],
       },
       animation: {
         "ticker-roll": "tickerRoll 30s linear infinite",

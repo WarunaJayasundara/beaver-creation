@@ -92,4 +92,6 @@ public/
       rnd-bg.jpg
 ```
 
-After adding or changing files, refresh the browser (or restart `npm run dev` if needed).
+After adding or changing files:
+- **Refresh the browser** so the site picks up new files. If a new image still doesn’t appear (e.g. you just uploaded it and still see a placeholder), do a **hard refresh**: `Ctrl+F5` (Windows) or `Cmd+Shift+R` (Mac) to clear cached responses.
+- Restart `npm run dev` only if the dev server was started before you created the folder.

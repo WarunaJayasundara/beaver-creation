@@ -3,21 +3,19 @@
 import { useState, useEffect } from "react";
 
 /**
- * Tries to use local image URL. If it fails to load (e.g. not uploaded), returns the dummy URL.
+ * Uses local image URL when the file exists (e.g. after you upload to public/images/).
+ * If the request fails (file not uploaded or 404), falls back to dummyUrl.
+ * After uploading a new image, hard-refresh (Ctrl+F5) if it doesn’t appear (browser cache).
  */
 export function useBackgroundImage(localUrl: string, dummyUrl: string): string {
-  const [url, setUrl] = useState(localUrl);
+  const [url, setUrl] = useState(dummyUrl);
 
   useEffect(() => {
     if (typeof window === "undefined") return;
-    try {
-      const img = new window.Image();
-      img.onload = () => setUrl(localUrl);
-      img.onerror = () => setUrl(dummyUrl);
-      img.src = localUrl;
-    } catch {
-      setUrl(dummyUrl);
-    }
+    const img = new window.Image();
+    img.onload = () => setUrl(localUrl);
+    img.onerror = () => setUrl(dummyUrl);
+    img.src = localUrl;
   }, [localUrl, dummyUrl]);
 
   return url;

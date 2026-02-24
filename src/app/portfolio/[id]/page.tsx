@@ -62,7 +62,7 @@ export default async function ProjectPage({
 
   return (
     <main className="pt-24">
-      <section className="py-[80px] px-6 md:px-[60px]">
+      <section className="py-24 md:py-[120px] px-5 md:px-12 lg:px-[60px]">
         <Link
           href="/portfolio"
           className="inline-flex items-center gap-2 text-primary font-syne text-sm font-semibold tracking-wider uppercase mb-10 no-underline hover:gap-3 transition-all"

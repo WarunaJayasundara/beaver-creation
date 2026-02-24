@@ -27,7 +27,7 @@ export function AboutSection() {
         </Reveal>
         <Reveal>
           <SectionLabel>Who We Are</SectionLabel>
-          <h2 className="font-bebas text-[clamp(2.5rem,4.5vw,4rem)] leading-[0.95] tracking-wide text-dark">
+          <h2 className="font-bebas font-bold text-[clamp(2.5rem,4.5vw,4rem)] leading-[0.95] tracking-wide text-dark">
             We Build <span className="text-primary">Bold</span> Ideas
           </h2>
           <p className="mt-4 text-[0.95rem] text-muted leading-relaxed mb-8">
@@ -39,7 +39,7 @@ export function AboutSection() {
           </p>
           <div className="flex flex-col gap-5">
             <div className="border-l-[3px] border-primary pl-5 py-4 bg-primary/5 rounded-r-md">
-              <h4 className="font-syne font-bold text-[0.75rem] tracking-[2px] uppercase text-primary mb-1.5">
+              <h4 className="font-syne font-black text-[0.75rem] tracking-[2px] uppercase text-primary mb-1.5">
                 Our Mission
               </h4>
               <p className="text-[0.9rem] leading-relaxed text-dark/80">
@@ -48,7 +48,7 @@ export function AboutSection() {
               </p>
             </div>
             <div className="border-l-[3px] border-primary pl-5 py-4 bg-primary/5 rounded-r-md">
-              <h4 className="font-syne font-bold text-[0.75rem] tracking-[2px] uppercase text-primary mb-1.5">
+              <h4 className="font-syne font-black text-[0.75rem] tracking-[2px] uppercase text-primary mb-1.5">
                 Our Vision
               </h4>
               <p className="text-[0.9rem] leading-relaxed text-dark/80">

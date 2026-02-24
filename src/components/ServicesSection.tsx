@@ -45,7 +45,7 @@ export function ServicesSection() {
       <div className="max-w-[600px] mb-14">
         <Reveal>
           <SectionLabel>What We Do</SectionLabel>
-          <h2 className="font-bebas text-[clamp(2.5rem,4.5vw,4rem)] leading-[0.95] tracking-wide text-white">
+          <h2 className="font-bebas font-bold text-[clamp(2.5rem,4.5vw,4rem)] leading-[0.95] tracking-wide text-white">
             Our <span className="text-primary">Four</span> Pillars
           </h2>
           <p className="mt-4 text-white/60 text-[0.95rem] leading-relaxed">
@@ -68,7 +68,7 @@ export function ServicesSection() {
               <div className="w-12 h-12 mb-4 rounded-lg bg-primary/10 border border-primary/20 flex items-center justify-center text-xl group-hover:bg-primary/20 group-hover:border-primary/40 transition-colors">
                 {s.icon}
               </div>
-              <h3 className="font-syne font-extrabold text-lg mb-3 text-white">
+              <h3 className="font-syne font-black text-lg mb-3 text-white">
                 {s.title}
               </h3>
               <p className="text-[0.875rem] leading-relaxed text-white/55 mb-5">

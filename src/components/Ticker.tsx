@@ -18,7 +18,7 @@ export function Ticker() {
         {[...items, ...items].map((item, i) => (
           <span
             key={i}
-            className="px-8 font-bebas text-[0.95rem] tracking-[3px] text-white flex items-center gap-4"
+            className="px-8 font-bebas font-bold text-[0.95rem] tracking-[3px] text-white flex items-center gap-4"
           >
             {item}
             <span className="text-[0.5rem] text-primary-hover opacity-80">◆</span>

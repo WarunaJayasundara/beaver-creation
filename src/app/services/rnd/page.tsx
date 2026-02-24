@@ -23,7 +23,7 @@ export default function RndPage() {
   const bg = useBackgroundImage(IMAGES.services.rnd, DUMMY_IMAGES.services.rnd);
   return (
     <main className="pt-24">
-      <section className="relative min-h-[60vh] flex items-center overflow-hidden px-6 md:px-[60px] py-20">
+      <section className="relative min-h-[60vh] flex items-center overflow-hidden px-5 md:px-12 lg:px-[60px] py-20 md:py-24">
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{

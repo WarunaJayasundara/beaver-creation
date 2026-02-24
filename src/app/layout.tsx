@@ -1,27 +1,13 @@
 import type { Metadata } from "next";
-import { Bebas_Neue, Syne, DM_Sans } from "next/font/google";
+import { Roboto } from "next/font/google";
 import "./globals.css";
 import { Nav } from "@/components/Nav";
 import { Footer } from "@/components/Footer";
 
-const bebas = Bebas_Neue({
-  weight: "400",
+const roboto = Roboto({
+  weight: ["300", "400", "500", "700", "900"],
   subsets: ["latin"],
-  variable: "--font-bebas",
-  display: "swap",
-});
-
-const syne = Syne({
-  weight: ["400", "600", "700", "800"],
-  subsets: ["latin"],
-  variable: "--font-syne",
-  display: "swap",
-});
-
-const dmSans = DM_Sans({
-  weight: ["300", "400", "500"],
-  subsets: ["latin"],
-  variable: "--font-dm-sans",
+  variable: "--font-roboto",
   display: "swap",
 });
 
@@ -39,7 +25,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${bebas.variable} ${syne.variable} ${dmSans.variable}`}
+      className={roboto.variable}
       suppressHydrationWarning
     >
       <body className="font-sans antialiased" suppressHydrationWarning>

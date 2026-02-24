@@ -18,7 +18,7 @@ export function PortfolioPreview() {
       <div className="flex flex-col md:flex-row md:justify-between md:items-end gap-6 mb-10">
         <Reveal>
           <SectionLabel>Our Work</SectionLabel>
-          <h2 className="font-bebas text-[clamp(2.5rem,4.5vw,4rem)] leading-[0.95] tracking-wide text-white">
+          <h2 className="font-bebas font-bold text-[clamp(2.5rem,4.5vw,4rem)] leading-[0.95] tracking-wide text-white">
             Where Creativity <span className="text-primary">Comes Alive</span>
           </h2>
         </Reveal>
@@ -55,7 +55,7 @@ export function PortfolioPreview() {
                 <span className="font-syne text-[0.65rem] font-bold tracking-[2px] uppercase text-primary mb-1.5">
                   {item.tag}
                 </span>
-                <span className="font-syne font-extrabold text-base text-white">
+                <span className="font-syne font-black text-base text-white">
                   {item.name}
                 </span>
               </div>

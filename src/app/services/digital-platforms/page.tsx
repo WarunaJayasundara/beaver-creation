@@ -28,7 +28,7 @@ export default function DigitalPlatformsPage() {
   const bg = useBackgroundImage(IMAGES.services.digitalPlatforms, DUMMY_IMAGES.services.digitalPlatforms);
   return (
     <main className="pt-24">
-      <section className="relative min-h-[60vh] flex items-center overflow-hidden px-6 md:px-[60px] py-20">
+      <section className="relative min-h-[60vh] flex items-center overflow-hidden px-5 md:px-12 lg:px-[60px] py-20 md:py-24">
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{

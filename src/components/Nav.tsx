@@ -38,7 +38,7 @@ export function Nav() {
     >
       <Link
         href="/"
-        className="font-bebas text-xl md:text-[1.75rem] tracking-[2px] text-white flex items-center gap-3 no-underline"
+        className="font-bebas font-bold text-xl md:text-[1.75rem] tracking-[2px] text-white flex items-center gap-3 no-underline"
       >
         {logoError ? (
           <span className="text-primary">
@@ -67,7 +67,7 @@ export function Nav() {
             <Link
               href={href}
               className={clsx(
-                "font-syne text-[0.8rem] font-semibold tracking-[1.5px] uppercase no-underline transition-colors",
+                "font-syne text-[0.8rem] font-bold tracking-[1.5px] uppercase no-underline transition-colors",
                 pathname === href
                   ? "text-primary"
                   : "text-white/75 hover:text-primary"
